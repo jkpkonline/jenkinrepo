@@ -1,0 +1,158 @@
+.account-box-section-one {
+	width: 20%;
+	float: left;
+	border-right: 1px solid #cccccc;
+}
+.account-box-section-two {
+	width: 30%;
+	float: left;
+}
+.account-box-section-three {
+	width: 40%;
+	float: left;
+}
+.account-box-section-four {
+	width: 10%;
+	float: left;
+}
+
+.account-summary-box, .account-detail-box, .opportunities-detail-box {
+	padding-top: 10px;
+	width: 90%;
+}
+
+.account-image {
+	width: 45%;
+	margin: 35%;
+}
+
+.account-detail-span {
+	width: 100%;	
+}
+
+#close_button {
+	width: 15px;
+	float: right;
+    margin-right: 25%
+}
+
+.title-text, .box-main-text {
+	font-weight: bold;
+}
+
+.account-section-main {
+	float: left;
+	width: 50%;
+}
+
+.account-detail-section-title {
+	float: left;
+	margin-left: 4%;
+}
+
+.account-detail-section-close {
+	float: right;
+	margin-right: 2%;
+}
+
+.box-section-artcle-text {
+	text-align: left;
+	margin-left: 15px;
+}
+
+.account-detail-box, .opportunities-detail-box { 
+   width: 48%;
+   text-align: left;
+   height: auto;
+}
+
+.account-detail-title-section {
+	height: 30px;
+}
+
+.span-text-newline, .span-text-newline-header {
+	display: block;
+}
+
+.account-detail-text-section {
+	padding-left: 4%;
+	float: left;
+	width: 80%;
+}
+
+.account4-type-image {
+	width: 100%;
+	float: right;
+}
+
+.account-detail-title-image-section {
+	float: right;
+	margin-right: 5%;
+	width: 10%;
+}
+
+.span-text-newline-header {
+	margin-top: 10px;
+}
+
+.account-bottom-image-section {
+	width: 98%;
+	float: left;
+	margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.account-bottom-image {
+	float: right;
+	width: 7%;
+    margin-left: 2%;
+}
+
+.account-article-notes {
+	font-weight: bold;
+	display: block;
+	margin-top: 20px;
+	
+}
+
+.box-top-text {
+	margin-bottom: 10px;
+}
+
+.box-main-text {
+	margin-top: 10px;
+}
+
+.box-top-text-font {
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 15%;
+	font-weight: bold;
+}
+
+.box-section3-text-top {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.opportunities-detail-box {
+	height: 370px;
+}
+
+.opportunity-box-last {
+	width: 45%
+}
+
+
+
+
+
+
+
+
+
+
+
+

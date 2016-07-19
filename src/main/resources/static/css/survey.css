@@ -1,0 +1,37 @@
+.meeting-box-fullpage {
+	width: 98%;
+	height: auto;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.meeting-box-text {
+	text-align: center;
+	color: black;
+	font-size: 20px
+}
+
+.meeting-text-bottom-padding {
+	padding-bottom: 20px
+}
+
+.meeting-text-color-black {
+	color: black;
+}
+
+.meeting-box-color-grey {
+	color: grey
+}
+
+.meeting-detail-span {
+	color: grey;
+	width: 25%
+}
+
+.meeting-close-button-section {
+	float: right;
+	padding-right: 15px;
+	padding-top: 10px
+}

@@ -46,7 +46,7 @@ public class SeleniumTest {
 		// Now submit the form. WebDriver will find the form for us from the
 		// element
 
-		driver.findElement(By.id("loginaa")).click();
+		driver.findElement(By.id("login")).click();
 
 		// Print a Log In message to the screen
 

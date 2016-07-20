@@ -2,6 +2,7 @@ package cucumberTest;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,7 +11,7 @@ public class SeleniumTest {
 
 	private static WebDriver driver = null;
 
-	//@Test
+	@Test
 	public void testLogin() {
 		// Create a new instance of the Firefox driver
 
@@ -62,7 +63,7 @@ public class SeleniumTest {
 		// Close the driver
 
 		driver.quit();
-System.out.println("Driver quiteddddddd.......");
+		System.out.println("Driver quiteddddddd.......");
 	}
 
 }

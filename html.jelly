@@ -44,7 +44,7 @@ TD.console { font-family:Courier New; }
 </TABLE>
 <BR/>
 
-
+<img src="${PROJECT_URL}/test/trend"/>
 <!-- CHANGE SET -->
 
 <j:set var="changeSet" value="${build.changeSet}" />

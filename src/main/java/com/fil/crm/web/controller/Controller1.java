@@ -31,8 +31,6 @@ public class Controller1 {
 			@RequestParam(value = RequestMappingConstants.USERNAME_PARAM, required = false) String username, Model model) {
 		model.addAttribute("name", name);
 		model.addAttribute("username", username);
-		int i = 5;
-		i =6;
 		model.addAttribute("name", name);
 		logger.info("Controller1 -- Welcome");
 		return "myMeetings";

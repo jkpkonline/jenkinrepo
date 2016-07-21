@@ -1,4 +1,4 @@
-package annotation;
+package cucumber.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When; 
 
 public class Annotation {
-	WebDriver driver = null; //new FirefoxDriver();
+	WebDriver driver = null;
 	
 	@Given("^User navigates to Facebook$")
 	public void goToFacebook() {

@@ -1,4 +1,4 @@
-package cucumberTest;
+package selenium;
 
 import java.util.concurrent.TimeUnit;
 

@@ -43,6 +43,9 @@ function get_heroku_app_name {
         echo 'You must specify one of staging/production'
         exit 1
     fi
+    
+    echo 'Destroying old app'
+    heroku apps:destroy --app ${HEROKU_APP} --confirm ${HEROKU_APP}
 	
 	heroku create ${HEROKU_APP}
 	echo 'heroku app created with name :'${HEROKU_APP}

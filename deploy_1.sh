@@ -45,7 +45,7 @@ function get_heroku_app_name {
     fi
     
     echo 'Destroying old app'
-    echo 'heroku apps:destroy --app ${HEROKU_APP} --confirm ${HEROKU_APP}'
+    heroku apps:destroy --app ${HEROKU_APP} --confirm ${HEROKU_APP}
 	
 	heroku create ${HEROKU_APP}
 	echo 'heroku app created with name :'${HEROKU_APP}

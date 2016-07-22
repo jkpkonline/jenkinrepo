@@ -9,156 +9,95 @@ package com.fil.crm.web.domain;
  */
 public class Meta {
 
-	private String Journey;
+	private String journey;
 
-	private String Customer_phone;
+	private String customerPhone;
 
-	private String Customer_mobilephone;
+	private String customerMobilephone;
 
-	private String Customer_lastname;
+	private String customerLastname;
 
-	private String Customer_id;
+	private String customerId;
 
-	private String Customer_firstname;
+	private String customerFirstname;
 
-	private String Customer_email;
+	private String customerEmail;
 
-	private String Case_id;
+	private String caseId;
 
-	private String Agent_id;
+	private String agentId;
 
-	/**
-	 * @return the journey
-	 */
 	public String getJourney() {
-		return Journey;
+		return journey;
 	}
 
-	/**
-	 * @param journey
-	 *            the journey to set
-	 */
 	public void setJourney(String journey) {
-		Journey = journey;
+		this.journey = journey;
 	}
 
-	/**
-	 * @return the customer_phone
-	 */
-	public String getCustomer_phone() {
-		return Customer_phone;
+	public String getCustomerPhone() {
+		return customerPhone;
 	}
 
-	/**
-	 * @param customer_phone
-	 *            the customer_phone to set
-	 */
-	public void setCustomer_phone(String customer_phone) {
-		Customer_phone = customer_phone;
+	public void setCustomerPhone(String customerPhone) {
+		this.customerPhone = customerPhone;
 	}
 
-	/**
-	 * @return the customer_mobilephone
-	 */
-	public String getCustomer_mobilephone() {
-		return Customer_mobilephone;
+	public String getCustomerMobilephone() {
+		return customerMobilephone;
 	}
 
-	/**
-	 * @param customer_mobilephone
-	 *            the customer_mobilephone to set
-	 */
-	public void setCustomer_mobilephone(String customer_mobilephone) {
-		Customer_mobilephone = customer_mobilephone;
+	public void setCustomerMobilephone(String customerMobilephone) {
+		this.customerMobilephone = customerMobilephone;
 	}
 
-	/**
-	 * @return the customer_lastname
-	 */
-	public String getCustomer_lastname() {
-		return Customer_lastname;
+	public String getCustomerLastname() {
+		return customerLastname;
 	}
 
-	/**
-	 * @param customer_lastname
-	 *            the customer_lastname to set
-	 */
-	public void setCustomer_lastname(String customer_lastname) {
-		Customer_lastname = customer_lastname;
+	public void setCustomerLastname(String customerLastname) {
+		this.customerLastname = customerLastname;
 	}
 
-	/**
-	 * @return the customer_id
-	 */
-	public String getCustomer_id() {
-		return Customer_id;
+	public String getCustomerId() {
+		return customerId;
 	}
 
-	/**
-	 * @param customer_id
-	 *            the customer_id to set
-	 */
-	public void setCustomer_id(String customer_id) {
-		Customer_id = customer_id;
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
 	}
 
-	/**
-	 * @return the customer_firstname
-	 */
-	public String getCustomer_firstname() {
-		return Customer_firstname;
+	public String getCustomerFirstname() {
+		return customerFirstname;
 	}
 
-	/**
-	 * @param customer_firstname
-	 *            the customer_firstname to set
-	 */
-	public void setCustomer_firstname(String customer_firstname) {
-		Customer_firstname = customer_firstname;
+	public void setCustomerFirstname(String customerFirstname) {
+		this.customerFirstname = customerFirstname;
 	}
 
-	/**
-	 * @return the customer_email
-	 */
-	public String getCustomer_email() {
-		return Customer_email;
+	public String getCustomerEmail() {
+		return customerEmail;
 	}
 
-	/**
-	 * @param customer_email
-	 *            the customer_email to set
-	 */
-	public void setCustomer_email(String customer_email) {
-		Customer_email = customer_email;
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
 	}
 
-	/**
-	 * @return the case_id
-	 */
-	public String getCase_id() {
-		return Case_id;
+	public String getCaseId() {
+		return caseId;
 	}
 
-	/**
-	 * @param case_id
-	 *            the case_id to set
-	 */
-	public void setCase_id(String case_id) {
-		Case_id = case_id;
+	public void setCaseId(String caseId) {
+		this.caseId = caseId;
 	}
 
-	/**
-	 * @return the agent_id
-	 */
-	public String getAgent_id() {
-		return Agent_id;
+	public String getAgentId() {
+		return agentId;
 	}
 
-	/**
-	 * @param agent_id
-	 *            the agent_id to set
-	 */
-	public void setAgent_id(String agent_id) {
-		Agent_id = agent_id;
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
 	}
+
+	
 }

@@ -43,9 +43,7 @@ TD.console { font-family:Courier New; }
   <TR><TD>Build duration:</TD><TD>${build.durationString}</TD></TR>
 </TABLE>
 <BR/>
-******
-<IMG SRC="https://raw.githubusercontent.com/jenkinsci/jenkins/master/war/src/main/webapp/images/32x32/green.gif" />
-******
+
 <!-- CHANGE SET -->
 
 <j:set var="changeSet" value="${build.changeSet}" />

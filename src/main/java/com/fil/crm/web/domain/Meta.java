@@ -1,4 +1,5 @@
 package com.fil.crm.web.domain;
+
 /**
  *
  */
@@ -8,23 +9,23 @@ package com.fil.crm.web.domain;
  */
 public class Meta {
 
-	String Journey;
+	private String Journey;
 
-	String Customer_phone;
+	private String Customer_phone;
 
-	String Customer_mobilephone;
+	private String Customer_mobilephone;
 
-	String Customer_lastname;
+	private String Customer_lastname;
 
-	String Customer_id;
+	private String Customer_id;
 
-	String Customer_firstname;
+	private String Customer_firstname;
 
-	String Customer_email;
+	private String Customer_email;
 
-	String Case_id;
+	private String Case_id;
 
-	String Agent_id;
+	private String Agent_id;
 
 	/**
 	 * @return the journey

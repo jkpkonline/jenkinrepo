@@ -29,7 +29,7 @@ public class SeleniumTest {
 
 		// Find the element that's ID attribute is 'account'(My Account)
 
-		driver.findElement(By.xpath(".//*[@id='nav-menu']/a")).click();
+		driver.findElement(By.id("nav-menu")).click();
 
 
 		driver.findElement(By.id("my-surveys-menu")).click();
@@ -38,8 +38,7 @@ public class SeleniumTest {
 		driver.findElement(By.id("outstanding-survey-menu")).click();
 
 		
-		driver.findElement(By.xpath(".//*[@id='nav-menu']/a")).click();
-
+		driver.findElement(By.id("nav-menu")).click();
 		driver.findElement(By.id("collaboration_product-menu")).click();
 
 

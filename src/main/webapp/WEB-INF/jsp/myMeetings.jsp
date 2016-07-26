@@ -14,7 +14,7 @@
 <link href="../css/navmenu-reveal.css" rel="stylesheet">
 <link href="../css/common.css" rel="stylesheet">
 
-<title>Welcome </title>
+<title>Welcome by Jenkin</title>
 </head>
 
 <body>

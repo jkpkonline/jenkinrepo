@@ -104,7 +104,7 @@
 	  <ul class="nav nav-pills align-left container">
 	  <li style="padding-left: 20px"><h4>Surveys</h4></li>	
 	    <li class="align-left active notes-tabs" style="margin-left: 40%"><a data-toggle="tab" href="#allSurvey">All</a></li>
-	    <li class="notes-tabs"><a data-toggle="tab" href="#outstandingSurvey">Outstanding</a></li>
+	    <li class="notes-tabs"><a id="outstanding-survey-menu" data-toggle="tab" href="#outstandingSurvey">Outstanding</a></li>
 	    <li class="notes-tabs"><a data-toggle="tab" href="#completedSurvey">Completed</a></li>
 
 	  </ul>	  

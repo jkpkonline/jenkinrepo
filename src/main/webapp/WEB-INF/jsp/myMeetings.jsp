@@ -27,7 +27,7 @@
 		<section class="inprogress-section">
 			<header class="meeting-header">
 				<section class="meeting-header-section">
-					<h4>My meetings</h4>
+					<h4>My meetingssss</h4>
 					<ul class="nav nav-pills">
 						<li class="active meetingListTab" id="TODAY"><a href="#" data-toggle="tab">Today</a></li>
 						<li class="meetingListTab" id="THIS_WEEK"><a href="#" data-toggle="tab">This week</a></li>

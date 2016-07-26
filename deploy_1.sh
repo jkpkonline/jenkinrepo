@@ -80,4 +80,3 @@ get_heroku_app_name
 enable_maintenance_mode
 
 disable_maintenance_mode
-deploy_code_to_heroku

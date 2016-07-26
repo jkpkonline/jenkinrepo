@@ -71,8 +71,7 @@ function disable_maintenance_mode {
 }
 
 function deploy_code_to_heroku {
-  mvn heroku:deploy-war    
-  mvn failsafe:integration-test
+  mvn heroku:deploy-war 
 }
 
 check_command_line

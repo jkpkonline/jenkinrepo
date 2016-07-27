@@ -41,7 +41,7 @@ public class Controller1Test {
 	@Test
 	public void testMeetingNotes() {
 		try {
-			assertTrue("meetingNotes1".equalsIgnoreCase(controller.meetingnotes("", modelmap)));
+			assertTrue("meetingNotes".equalsIgnoreCase(controller.meetingnotes("", modelmap)));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -50,7 +50,7 @@ public class Controller1Test {
 	@Test
 	public void testFeed() {
 		try {
-			assertTrue("feed1".equalsIgnoreCase(controller.feed()));
+			assertTrue("feed".equalsIgnoreCase(controller.feed()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 			fail("Exception : " + e.getMessage());
@@ -60,7 +60,7 @@ public class Controller1Test {
 	@Test
 	public void testMyMeetings() {
 		try {
-			assertTrue("myMeetings1".equalsIgnoreCase(controller.myMeetings(modelmap, range)));
+			assertTrue("myMeetings".equalsIgnoreCase(controller.myMeetings(modelmap, range)));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -78,7 +78,7 @@ public class Controller1Test {
 	@Test
 	public void testHome() {
 		try {
-			assertTrue("home1".equalsIgnoreCase(controller.home()));
+			assertTrue("home".equalsIgnoreCase(controller.home()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -96,7 +96,7 @@ public class Controller1Test {
 	@Test
 	public void testCollaborateMyTeam() {
 		try {
-			assertTrue("collaboration-myteam1".equalsIgnoreCase(controller.collaborationMyteam()));
+			assertTrue("collaboration-myteam".equalsIgnoreCase(controller.collaborationMyteam()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -105,7 +105,7 @@ public class Controller1Test {
 	@Test
 	public void testSTFW() {
 		try {
-			assertTrue("stfw1".equalsIgnoreCase(controller.stfw()));
+			assertTrue("stfw".equalsIgnoreCase(controller.stfw()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -113,7 +113,7 @@ public class Controller1Test {
 	@Test
 	public void testAccounts() {
 		try {
-			assertTrue("accounts1".equalsIgnoreCase(controller.accounts()));
+			assertTrue("accounts".equalsIgnoreCase(controller.accounts()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -121,7 +121,7 @@ public class Controller1Test {
 	@Test
 	public void testThoughtLeadership() {
 		try {
-			assertTrue("thoughtLeadership1".equalsIgnoreCase(controller.thoughtLeadership()));
+			assertTrue("thoughtLeadership".equalsIgnoreCase(controller.thoughtLeadership()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}
@@ -129,7 +129,7 @@ public class Controller1Test {
 	@Test
 	public void testInfoAnalyticsProduct() {
 		try {
-			assertTrue("infoAnalyticsProduct1".equalsIgnoreCase(controller.infoAnalyticsProduct()));
+			assertTrue("infoAnalyticsProduct".equalsIgnoreCase(controller.infoAnalyticsProduct()));
 		} catch (Exception e) {
 			logger.info("Exception :" + e.getLocalizedMessage());
 		}

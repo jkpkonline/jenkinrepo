@@ -67,6 +67,76 @@ public class Controller1Test {
 			//fail("Exception : " + e.getMessage());
 		}
 	}
+	
+	@Test
+	public void testDashboards() {
+		try {
+			assertTrue("dashboards".equalsIgnoreCase(controller.dashboards()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	
+	@Test
+	public void testHome() {
+		try {
+			assertTrue("home".equalsIgnoreCase(controller.home()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	
+	@Test
+	public void testSendSurvey() {
+		try {
+			assertTrue("sendSurvey".equalsIgnoreCase(controller.sendSurvey("1", modelmap)));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	
+	@Test
+	public void testCollaborateMyTeam() {
+		try {
+			assertTrue("collaboration-myteam".equalsIgnoreCase(controller.collaborationMyteam()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	
+	@Test
+	public void testSTFW() {
+		try {
+			assertTrue("stfw".equalsIgnoreCase(controller.stfw()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	@Test
+	public void testAccounts() {
+		try {
+			assertTrue("accounts".equalsIgnoreCase(controller.accounts()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	@Test
+	public void testThoughtLeadership() {
+		try {
+			assertTrue("thoughtLeadership".equalsIgnoreCase(controller.thoughtLeadership()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	@Test
+	public void testInfoAnalyticsProduct() {
+		try {
+			assertTrue("infoAnalyticsProduct".equalsIgnoreCase(controller.infoAnalyticsProduct()));
+		} catch (Exception e) {
+			logger.info("Exception :" + e.getLocalizedMessage());
+		}
+	}
+	
 
 	@Before
 	public void setup() {

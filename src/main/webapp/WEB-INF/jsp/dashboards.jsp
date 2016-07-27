@@ -31,8 +31,8 @@
 				<!-- <ul class="nav nav-pills nav-justified"> -->
 				<ul class="nav nav-pills align-left container" style="margin-bottom:10px;margin-top:10px;">
 					<li class="active"><a data-toggle="pill" href="#pipeline">Pipeline</a></li>
-					<li><a data-toggle="pill" href="#sales">Sales</a></li>
-					<li><a data-toggle="pill" href="#assets">Assets</a></li>
+					<li><a id="client-dashboard-sales" data-toggle="pill" href="#sales">Sales</a></li>
+					<li><a id="client-dashboard-assets" data-toggle="pill" href="#assets">Assets</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="pipeline" class="tab-pane fade in active">

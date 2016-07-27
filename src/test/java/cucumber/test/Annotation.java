@@ -11,30 +11,72 @@ import cucumber.api.java.en.When;
 public class Annotation {
 	WebDriver driver = null;
 	
-	@Given("^User navigates to Facebook$")
-	public void goToFacebook() {
+	@Given("^User navigates to Heroku app$")
+	public void goToMyApp() {
 		driver = new FirefoxDriver();
-		driver.navigate().to("https://www.facebook.com/");
+		driver.navigate().to("https://test-boot-fil-project-staging.herokuapp.com/accounts");
+		waitToRender();
 	}
 
-	@When("^I enter username as \"(.*)\"$")
-	public void enterUsername(String arg1) {
-		driver.findElement(By.id("email")).sendKeys(arg1);
+	@When("^User go to main menu$")
+	public void openMainMenu() {
+		driver.findElement(By.id("nav-menu")).click();
+		waitToRender();
 	}
 
-	@When("^I enter password as \"(.*)\"$")
-	public void enterPassword(String arg1) {
-		driver.findElement(By.id("pass")).sendKeys(arg1);
-		driver.findElement(By.id("u_0_m")).click();
+	@When("^User go to the RFP screen$")
+	public void goToRpf() {
+		driver.findElement(By.id("rfp-menu")).click();
+		waitToRender();
+	}
+	
+	@When("^User go to the client dashboard screen$")
+	public void goToClientDefaultDashboard() {
+		driver.findElement(By.id("client-dashboard-menu")).click();
+		waitToRender();
 	}
 
-	@Then("^Login should fail$")
+	@When("^User go to the client's sales dashboard screen$")
+	public void goToClientSalesDashboard() {
+		driver.findElement(By.id("client-dashboard-sales")).click();
+		waitToRender();
+	}
+	
+	@When("^User go to the client's assets dashboard screen$")
+	public void goToClientAssetsDashboard() {
+		driver.findElement(By.id("client-dashboard-assets")).click();
+		waitToRender();
+		
+	}
+	
+	@When("^User go to the thought leadership screen$")
+	public void goToThoughtLeadership() {
+		driver.findElement(By.id("thoughtleadership-menu")).click();
+		waitToRender();
+	}
+	
+	@When("^User go to the STFW screen$")
+	public void goToSTFW() {
+		driver.findElement(By.id("stfw-menu")).click();
+		waitToRender();
+	}
+	
+	@When("^User go to the opportunity screen$")
+	public void goToOpportunity() {
+		driver.findElement(By.id("opportunites-menu")).click();
+		waitToRender();
+	}
+	
+	void waitToRender() {
+		try {
+			Thread.currentThread().sleep(2000);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+	}
+	
+	@Then("^Closing the app$")
 	public void checkFail() {
-		if (driver.getCurrentUrl().equalsIgnoreCase("https://www.facebook.com/login.php?login_attempt=1&lwv=110")) {
-			System.out.println("Test1 Pass");
-		} else {
-			System.out.println("Test1 Failed");
-		}
 		driver.close();
 	}
 

@@ -20,7 +20,7 @@ sleep 5
 THIS_SCRIPT=$(readlink -f $0)
 THIS_DIR=$(dirname ${THIS_SCRIPT})
 
-ENVIRONMENT=$1
+ENVIRONMENT=$app_env
 
 STAGING_APP="$app_name""-""$app_env"
 PRODUCTION_APP='test-fil-project'

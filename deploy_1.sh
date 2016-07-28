@@ -10,12 +10,19 @@ function usage {
 }
 
 
+. heroku_config.properties
+
+echo "$app_name""-""$app_env"
+
+
+sleep 5
+
 THIS_SCRIPT=$(readlink -f $0)
 THIS_DIR=$(dirname ${THIS_SCRIPT})
 
 ENVIRONMENT=$1
 
-STAGING_APP='test-boot-fil-project-staging'
+STAGING_APP="$app_name""-""$app_env"
 PRODUCTION_APP='test-fil-project'
 
 

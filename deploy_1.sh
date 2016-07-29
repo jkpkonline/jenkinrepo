@@ -12,11 +12,6 @@ function usage {
 
 . heroku_config.properties
 
-echo "$app_name""-""$app_env"
-
-
-sleep 5
-
 THIS_SCRIPT=$(readlink -f $0)
 THIS_DIR=$(dirname ${THIS_SCRIPT})
 
@@ -66,7 +61,7 @@ function get_heroku_app_name {
 	#heroku git:remote -a ${HEROKU_APP} 
 	
 	echo 'going to execute db scripts...'
-    heroku pg:psql --app ${HEROKU_APP} < C:\\Work\\Workspace\\mymobileapp1\\dbscript.sql
+    heroku pg:psql --app ${HEROKU_APP} < dbscript.sql
 }
 
 function enable_maintenance_mode {

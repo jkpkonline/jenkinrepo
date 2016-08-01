@@ -12,6 +12,9 @@ function usage {
 
 . heroku_config.properties
 
+echo $adon_prostgre_hobby_dev
+sleep 6
+
 THIS_SCRIPT=$(readlink -f $0)
 THIS_DIR=$(dirname ${THIS_SCRIPT})
 
@@ -19,7 +22,6 @@ ENVIRONMENT=$app_env
 
 STAGING_APP="$app_name""-""$app_env"
 PRODUCTION_APP='test-fil-project'
-
 
 function check_command_line {
 
@@ -52,16 +54,15 @@ function get_heroku_app_name {
 	heroku create ${HEROKU_APP}
 	echo 'heroku app created with name :'${HEROKU_APP}
 	
-	heroku addons:create heroku-postgresql:hobby-dev --app ${HEROKU_APP}
+	heroku addons:create $adon_prostgre_hobby_dev --app ${HEROKU_APP}
 	echo 'addon added for database - heroku-postgressql ... done!'
-	
 	
 	git init
 	git remote show
 	#heroku git:remote -a ${HEROKU_APP} 
 	
 	echo 'going to execute db scripts...'
-    heroku pg:psql --app ${HEROKU_APP} < dbscript.sql
+    heroku pg:psql --app ${HEROKU_APP} < $db_script_path
 }
 
 function enable_maintenance_mode {
@@ -76,6 +77,14 @@ function deploy_code_to_heroku {
   mvn heroku:deploy-war
 }
 
+function run_selenium {
+  mvn $selenium_test
+}
+
+function destroy_app {
+  heroku apps:destroy --app ${HEROKU_APP} --confirm ${HEROKU_APP}
+}
+
 check_command_line
 enable_shell_echo
 get_heroku_app_name
@@ -83,3 +92,5 @@ enable_maintenance_mode
 
 disable_maintenance_mode
 deploy_code_to_heroku
+run_selenium
+destroy_app

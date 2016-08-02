@@ -28,7 +28,7 @@
 		<section >
 			<header class="meeting-header">
 				<section class="meeting-header-section">
-					<h4>My accounts111111111</h4>
+					<h4>My accounts</h4>
 
 				</section>
 			</header>

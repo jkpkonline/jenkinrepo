@@ -12,9 +12,6 @@ function usage {
 
 . heroku_config.properties
 
-echo $adon_prostgre_hobby_dev
-sleep 6
-
 THIS_SCRIPT=$(readlink -f $0)
 THIS_DIR=$(dirname ${THIS_SCRIPT})
 
@@ -54,7 +51,7 @@ function get_heroku_app_name {
 	heroku create ${HEROKU_APP}
 	echo 'heroku app created with name :'${HEROKU_APP}
 	
-	heroku addons:create $adon_prostgre_hobby_dev --app ${HEROKU_APP}
+	heroku addons:create $addon_prostgre_hobby_dev --app ${HEROKU_APP}
 	echo 'addon added for database - heroku-postgressql ... done!'
 	
 	git init
@@ -74,7 +71,7 @@ function disable_maintenance_mode {
 }
 
 function deploy_code_to_heroku {
-  mvn heroku:deploy-war
+  mvn heroku:deploy-war -Dmaven.test.skip=true
 }
 
 function run_selenium {
